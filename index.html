@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="frame">
+        <h1>Color Picker</h1>
+        <hr>
+
+        <div class="window">
+            <!-- <span>#000000</span> -->
+        </div>
+
+        <div class="function_btn">
+            <a href="#" id="copy">Copy Code</a>
+            <a href="#" id="random">Random Color</a>
+        </div>
+
+        <div class="codes">
+            <div class="rgb">
+                <i class="fa-sharp fa-solid fa-palette"></i>
+                <span id="rgb_code">rgb(255, 255, 255)</span>
+            </div>
+
+            <div class="rgb">
+                <i class="fa-sharp fa-solid fa-palette"></i>
+                <span id="hex_code">#000000</span>
+            </div>
+        </div>
+
+        <div class="rgb_color_pick">
+            <div class="red color">
+                <div class="text">
+                    <span>RED</span>
+                    <span id="red_value">255</span>
+                </div>
+                <div class="range">
+                    <input class="color_input" type="range" name="" id="red_input" min="0" max="255" value="200">
+                </div>
+            </div>
+
+            <div class="red color">
+                <div class="text">
+                    <span>GREEN</span>
+                    <span id="green_value">255</span>
+                </div>
+                <div class="range">
+                    <input class="color_input" type="range" name="" id="green_input" min="0" max="255" value="200">
+                </div>
+            </div>
+
+            <div class="red color">
+                <div class="text">
+                    <span>BLUE</span>
+                    <span id="blue_value">255</span>
+                </div>
+                <div class="range">
+                    <input class="color_input" type="range" name="" id="blue_input" min="0" max="255" value="200">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
