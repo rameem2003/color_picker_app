@@ -14,11 +14,11 @@ const blue_value = document.getElementById("blue_value");
 
 const allcolor = document.querySelectorAll(".color_input")
 
-window.onload = () => {
-    const {RED, GREEN, BLUE} = genarate_RGB_code();
+// window.onload = () => {
+//     const {RED, GREEN, BLUE} = genarate_RGB_code();
 
-    color_window.style.background = `rgb(${RED}, ${GREEN}, ${BLUE})`
-}
+//     color_window.style.background = `rgb(${RED}, ${GREEN}, ${BLUE})`
+// }
 
 // for random button
 random.addEventListener("click", () => {
@@ -96,6 +96,7 @@ function changeColor() {
 
 // display color on change input
 function displayColor() {
+    // for rgb color
     let RED = red_input.value;
     let GREEN = green_input.value;
     let BLUE = blue_input.value;
@@ -104,4 +105,7 @@ function displayColor() {
 
     color_window.style.background = rgb_color;
     rgb_code.innerHTML = rgb_color;
+
+    // for hex code
+    hex_code.innerHTML = `#${hexCode(RED)}${hexCode(GREEN)}${hexCode(BLUE)}`;
 }
